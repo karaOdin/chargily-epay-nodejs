@@ -1,0 +1,12 @@
+{
+  "name": "chargily-epay-gateway",
+  "version": "1.0.0",
+  "description": "Chargily ePay Gateway for nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["EDAHABIA","CIB","Chargily", "ePay","cibweb","Satim"],
+  "author": "Chargily",
+  "license": "GPL"
+}
