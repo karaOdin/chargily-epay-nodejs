@@ -7,21 +7,23 @@ export enum Mode {
 export const EPAY_CHARGILY_URL = "http://epay.chargily.com.dz/api/invoice";
 
 export class Invoice {
-  private _appKey: string;
-  private _client: string;
-  private _amount: number;
-  private _discount: number;
-  private _invoiceNumber: number;
-  private _backUrl: any;
-  private _webhookUrl: any;
-  private _mode: Mode;
+
+  protected invoice = {}
+  private _appKey: string
+  private _client: string
+  private _amount: number
+  private _discount: number
+  private _invoiceNumber: number
+  private _backUrl: string
+  private _webhookUrl: string
+  private _mode: Mode
 
   get appKey() {
     return this._appKey;
   }
 
   set appKey(appKey) {
-    this.appKey = appKey;
+    this._appKey = appKey;
   }
 
   get client() {
@@ -67,7 +69,7 @@ export class Invoice {
   }
 
   set backUrl(backUrl) {
-    this.backUrl = backUrl;
+    this._backUrl = backUrl;
   }
 
   get webhookUrl() {
